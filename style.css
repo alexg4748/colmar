@@ -25,11 +25,11 @@ p {
   color:rgba(74, 74, 74, 0.7);
 }
 /*header*/
-.mobile-logo {
+.mobile-header {
   display: none;
 }
 
-.header {
+.desktop-header {
   display: flex;
   width: 100%;
   height: 64px;
@@ -43,11 +43,11 @@ p {
   margin-left: 24px;
 }
 
-.header nav {
+.desktop-header nav {
   margin-right: 16px;
 }
 
-.header a {
+.desktop-header a {
   margin: 0 8px;
   color: rgb(74, 74, 74);
   text-decoration: none;
@@ -91,7 +91,11 @@ p {
 }
 
 /*about*/
-.about {
+.about-mobile {
+  display: none;
+}
+
+.about-desktop {
   display: flex;
 }
 
@@ -259,27 +263,35 @@ p {
   display: flex;
   border-top: lightgrey solid 1px;
   padding: 16px 24px;
+  justify-content: space-between;
 }
 
 .terms {
+  display: flex;
+}
+
+.terms p {
+  margin: 0 8px;
 }
 
 /*media queries*/
 @media only screen and (max-width:1000px) {
   /*header*/
-  .desktop-logo {
+  .desktop-header {
     display: none;
   }
 
-  .header nav {
-    display: none;
+  .mobile-header {
+    display: block;
+    height: 64px;
   }
+
 
   .mobile-logo {
-    display:flex;
-    height: 64px;
+    display: flex;
     justify-content: space-between;
-    margin: 0 24px;
+    padding: 12px 24px;
+    margin: auto 0;
   }
 
   /*banner*/
@@ -289,22 +301,40 @@ p {
 
   .banner-message {
     width: 100%;
-    align-items: center;
+    margin-top: 32px;
+  }
+
+  .banner-message button {
+    margin: 24px 0 32px 0;
   }
 
   .banner img {
     width: 100%;
+    margin: 0;
   }
 
   /*about*/
-  .main {
+  .about-desktop {
     display: none;
   }
 
-  .tiles {
-    width: 100%;
-    align-items: center;
+  .about-mobile {
+    display: block;
+    text-align: center;
   }
+
+  .tile-mobile {
+    display: block;
+    border: none;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .tile-text-mobile a {
+    text-decoration: none;
+  }
+
 
   /*courses*/
   .desktop-coursegroup {
@@ -333,6 +363,7 @@ p {
 
   .mobile-exhibit-body {
     display: block;
+    margin: 16px 0 24px 0;
   }
 
   .exhibits h1 {
