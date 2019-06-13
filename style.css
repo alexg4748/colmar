@@ -276,6 +276,10 @@ p {
 
 /*media queries*/
 @media only screen and (max-width:1000px) {
+  /*general*/
+  body {
+    overflow-x: hidden;
+  }
   /*header*/
   .desktop-header {
     display: none;
@@ -300,12 +304,14 @@ p {
   }
 
   .banner-message {
-    width: 100%;
-    margin-top: 32px;
+    width: 90%;
+    margin: 32px auto;
   }
 
   .banner-message button {
     margin: 24px 0 32px 0;
+    padding: 16px;
+    width: 100%;
   }
 
   .banner img {
@@ -318,17 +324,19 @@ p {
     display: none;
   }
 
+  .about-mobile-container {
+    width: 90%;
+  }
+
   .about-mobile {
     display: block;
-    text-align: center;
   }
 
   .tile-mobile {
-    display: block;
     border: none;
     width: 100%;
     height: auto;
-
+    margin: 32px auto;
   }
 
   .tile-text-mobile a {
