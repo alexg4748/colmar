@@ -265,7 +265,7 @@ p {
 }
 
 /*media queries*/
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:1000px) {
   /*header*/
   .desktop-logo {
     display: none;
