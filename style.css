@@ -91,7 +91,7 @@ p {
 }
 
 /*about*/
-.about-mobile {
+.about-mobile-container {
   display: none;
 }
 
@@ -218,6 +218,7 @@ p {
 
 .desktop-exhibit-body h3 {
   padding-bottom: 8px;
+  margin-top: 24px;
 }
 
 .desktop-exhibit-body p {
@@ -325,11 +326,14 @@ p {
   }
 
   .about-mobile-container {
+    display: block;
     width: 90%;
+    margin: 0 auto;
   }
 
   .about-mobile {
-    display: block;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .tile-mobile {
@@ -337,6 +341,11 @@ p {
     width: 100%;
     height: auto;
     margin: 32px auto;
+  }
+
+  .tile-mobile img {
+    width: 100%;
+    height: auto;
   }
 
   .tile-text-mobile a {
