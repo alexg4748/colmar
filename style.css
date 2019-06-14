@@ -389,6 +389,7 @@ p {
 
   .mobile-exhibit-body video {
     width: 100%;
+    height: auto;
   }
 
   .terms {
